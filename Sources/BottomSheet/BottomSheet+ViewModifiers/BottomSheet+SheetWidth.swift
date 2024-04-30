@@ -19,7 +19,7 @@ public extension BottomSheet {
     ///   - width: The width to use for the bottom sheet.
     ///
     /// - Returns: A BottomSheet with the configured width.
-    func sheetWidth(_ width: BottomSheetWidth = .platformDefault) -> BottomSheet {
+    func sheetWidth(_ width: BottomSheetWidth = .relative(1)) -> BottomSheet {
         self.configuration.sheetWidth = width
         return self
     }
